@@ -1,11 +1,11 @@
 ---
 name: meta-ads
-description: Meta Ads Manager API access and campaign management. Use when working with Facebook/Instagram advertising campaigns, analyzing ad performance, fetching statistics, or managing ad accounts. Supports authenticated access to Meta Ads Manager via internal API discovery and replay.
+description: Meta Ads Manager API access and marketing toolkit. Use when working with Facebook/Instagram ads: fetching statistics, analyzing performance, generating ad copy, building audiences, or managing campaigns. Combines technical API access with marketing best practices from labofideas/ads-skills.
 ---
 
 # Meta Ads
 
-Meta Ads Manager internal API skill for accessing campaign data, performance metrics, and ad account management through reverse-engineered internal endpoints.
+Complete Meta Ads toolkit: technical API access + marketing workflows. Reverse-engineered internal endpoints for campaign data, performance metrics, and ad account management, plus AI-powered copywriting and audience building tools.
 
 ## Quick Start
 
@@ -63,6 +63,43 @@ unbrowse_replay --service "meta-ads" --endpoint "GET /api/ads/accounts"
 - Targeting criteria breakdowns
 - Custom audience lists
 - Audience size estimates
+
+## Marketing Tools (AI-Powered)
+
+### 5. Ad Copy Generation
+Generate compelling ad copy using AI frameworks:
+- **Direct response** - Hook → Problem → Solution → Proof → CTA
+- **Lead generation** - Question → What they'll get → How easy → CTA
+- **Brand awareness** - Story → Brand position → Emotional connection
+
+```bash
+# Generate 3 ad variations
+scripts/generate-ad-copy.sh \
+  "fitness app" \
+  "busy professionals 25-45" \
+  "start free trial" \
+  "friendly"
+```
+
+### 6. Audience Building Strategy
+AI-powered audience recommendations based on customer profiles:
+- Tier 1: First-party data (customers, website, engagement)
+- Tier 2: Lookalike audiences (1%, 2%, etc.)
+- Tier 3: Interest-based targeting
+- Tier 4: Exclusions to avoid waste
+
+```bash
+# Get audience strategy
+scripts/build-audiences.sh \
+  "busy professionals 25-45, want to lose 5-20kg, tried diets before"
+```
+
+### 7. Creative Analysis
+Analyze ad creative performance using prompts from `prompts/meta-ads-creative-analyzer.md`:
+- Image element analysis
+- Copy performance by creative
+- A/B test recommendations
+- Creative fatigue detection
 
 ## Common Workflows
 
@@ -162,9 +199,23 @@ for c in top_campaigns:
 ### scripts/
 - `capture-meta-ads.sh` - Automated API capture script
 - `fetch-campaigns.sh` - Fetch all campaigns with metrics
-- `export-stats.sh` - Export statistics to CSV/JSON
+- `generate-ad-copy.sh` - AI-powered ad copy generation
+- `build-audiences.sh` - AI-powered audience strategy builder
+
+### prompts/
+Marketing prompt templates from [labofideas/ads-skills](https://github.com/labofideas/ads-skills):
+- `meta-ads-ad-copy.md` - Comprehensive ad copywriting guide
+- `meta-ads-audience-builder.md` - Audience targeting framework
+- `meta-ads-creative-analyzer.md` - Creative performance analysis
 
 ### references/
 - `api-endpoints.md` - Complete API endpoint documentation
 - `metrics-reference.md` - Available metrics and dimensions
 - `error-codes.md` - Common error codes and resolutions
+
+## Credit
+
+**Technical API access:** OpenClaw unbrowse system
+**Marketing frameworks:** [labofideas/ads-skills](https://github.com/labofideas/ads-skills) by Lab of Ideas
+
+Combines reverse-engineered API access with proven marketing best practices.
