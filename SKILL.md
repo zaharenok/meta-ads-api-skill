@@ -1,6 +1,6 @@
 ---
 name: meta-ads-api-skill
-description: Meta Ads Manager API access and marketing toolkit. Use when working with Facebook/Instagram ads: fetching statistics, analyzing performance, generating ad copy, building audiences, or managing campaigns. Combines technical API access with marketing best practices.
+description: "Meta Ads Manager API access and marketing toolkit. Use when working with Facebook and Instagram ads - fetching statistics, analyzing performance, generating ad copy, building audiences, or managing campaigns. Combines technical API access with marketing best practices."
 ---
 
 # Meta Ads
